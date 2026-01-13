@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router";
+import logo from "../../assets/logo/logo.png";
 
 const navData = [
   { path: "/", label: "Home" },
@@ -41,7 +42,8 @@ const Header = () => {
       <div className="container mx-auto max-w-screen-2xl flex justify-between items-center px-4 py-4">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold text-red-600 flex items-center gap-2">
-           <span className="bg-black text-white px-2 py-1 rounded">WAB360</span> Pulse
+           {/* <span className="bg-black text-white px-2 py-1 rounded">WAB360</span> Pulse */}
+           <img src={logo} alt="WAB360 Pulse Logo" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Menu */}

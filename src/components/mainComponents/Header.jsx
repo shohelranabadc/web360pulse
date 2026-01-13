@@ -8,6 +8,7 @@ const navData = [
   { path: "/donar", label: "Find Donars" },
   { path: "/request", label: "Blood Request" },
   { path: "/events", label: "Events" },
+  { path: "/blog", label: "Blog" },
   { path: "/about", label: "About Us" },
 ];
 

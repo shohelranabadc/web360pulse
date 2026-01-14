@@ -1,13 +1,10 @@
 import React from 'react'
+import Hero from './Hero'
 
 const Home = () => {
   return (
     <div>
-      {/* Hero section */}
-      <section className='w-full bg-emerald-700'>
-        <h1>hero section</h1>
-
-      </section>
+     <Hero />
 
       {/* Donor List section */}
       <section id='Donar-List-section' className=''>

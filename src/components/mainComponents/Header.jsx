@@ -1,7 +1,7 @@
 import { Menu, X } from "lucide-react";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router";
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logo-removebg-preview.png";
 
 const navData = [
   { path: "/", label: "Home" },
@@ -39,7 +39,7 @@ const Header = () => {
     setIsMenuOpen((prevState) => !prevState);
   };
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 left-0 right-0 z-50 shadow-md bg-black/95 text-white">
       <div className="container mx-auto max-w-screen-2xl flex justify-between items-center px-4 py-4">
         {/* Logo */}
         <Link to="/" className="text-xl font-bold text-red-600 flex items-center gap-2">

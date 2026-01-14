@@ -5,7 +5,7 @@ import logo from "../../assets/logo/logo-removebg-preview.png";
 
 const navData = [
   { path: "/", label: "Home" },
-  { path: "/donar", label: "Find Donars" },
+  { path: "/donors", label: "Find Donars" },
   { path: "/request", label: "Blood Request" },
   { path: "/events", label: "Events" },
   { path: "/blog", label: "Blog" },
@@ -17,7 +17,7 @@ const NavItems = ({toggleMenu}) => {
   
   return (
     <nav>
-      <ul className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+      <ul className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
         {
           navData.map((item, index) => (
             <li key={index} onClick={toggleMenu}>
@@ -63,7 +63,7 @@ const Header = () => {
         </div>
 
         {/* Hamburger Button */}
-        <div className="cursor-pointer md:hidden text-gray-800" onClick={toggleMenu}>
+        <div className="cursor-pointer md:hidden text-white" onClick={toggleMenu}>
           {isMenuOpen ? null : <Menu size={28} />}
         </div>
 

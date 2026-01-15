@@ -10,6 +10,7 @@ import Donate from '../pages/mainPages/donate/Donate';
 import Blog from '../pages/mainPages/blog/Blog';
 import NotFound from '../components/mainComponents/NotFound';
 import Registration from '../pages/mainPages/auth/Registration';
+import Login from '../pages/mainPages/auth/Login';
 
 const router = createBrowserRouter([
     {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
             {path: "/about", element: <About />},
             {path: "/donate", element: <Donate />},
             {path: "/registration", element: <Registration />},
-            {path: "/login", element: <About />},
+            {path: "/login", element: <Login />},
             {path: "*", element: <NotFound />},
         ]
     },

@@ -1,24 +1,20 @@
 import React from 'react'
 import Hero from './Hero'
+import { Droplets, MapPin, Calendar, Phone } from 'lucide-react';
+import BloodRequest from '../bloodRequest/BloodRequest';
 
 const Home = () => {
   return (
-    <div>
+    <>
      <Hero />
+     <BloodRequest />
 
-      {/* Donor List section */}
-      <section id='Donar-List-section' className=''>
-        <div className=''>
-          <div>Title</div>
-          <div id='Donars-card' className='flex'>
-            <div className='card shadow-2xl'>Card</div>
-            <div className='card'>Card</div>
-            <div className='card'>Card</div>
+      
 
-          </div>
-        </div>
-      </section>
-    </div>
+
+
+
+    </>
   )
 }
 

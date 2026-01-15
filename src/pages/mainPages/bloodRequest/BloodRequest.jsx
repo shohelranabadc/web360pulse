@@ -1,8 +1,11 @@
 import React from 'react'
+import RequestCard from './RequestCard'
 
 const BloodRequest = () => {
   return (
-    <div>BloodRequest</div>
+    <div>
+      <RequestCard />
+    </div>
   )
 }
 

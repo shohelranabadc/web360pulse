@@ -2,7 +2,6 @@ import React from 'react'
 import { createBrowserRouter } from 'react-router'
 import MainLayout from '../layouts/MainLayout';
 import Home from '../pages/mainPages/home/Home';
-import About from '../pages/mainPages/aboutUs/About';
 import BloodRequest from '../pages/mainPages/bloodRequest/BloodRequest';
 import Events from '../pages/mainPages/events/Events';
 import Donate from '../pages/mainPages/donate/Donate';
@@ -12,6 +11,8 @@ import Registration from '../pages/mainPages/auth/Registration';
 import Login from '../pages/mainPages/auth/Login';
 import DonorList from '../pages/mainPages/donor/DonorList';
 import EventDetails from '../pages/mainPages/events/EventDetails';
+import BlogDetails from '../pages/mainPages/blog/BlogDetails';
+import AboutUs from '../pages/mainPages/aboutUs/AboutUs';
 
 const router = createBrowserRouter([
     {
@@ -24,7 +25,8 @@ const router = createBrowserRouter([
             {path: "/events", element: <Events />},
             {path: "/events/:id", element: <EventDetails />},
             {path: "/blog", element: <Blog />},
-            {path: "/about", element: <About />},
+            {path: "/blog/:id", element: <BlogDetails />},
+            {path: "/about", element: <AboutUs />},
             {path: "/donate", element: <Donate />},
             {path: "/registration", element: <Registration />},
             {path: "/login", element: <Login />},
